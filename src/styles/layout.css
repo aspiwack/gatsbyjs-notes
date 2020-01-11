@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html, body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: .45rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: .35rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: .30rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: .25rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+ul {
+  margin-bottom: 1.5rem;
+}
+
+li {
+  line-height: 1.25rem;
+}
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+  margin: 15px 0;
+}
+
+strong {
+  font-weight: 700px;
+}
+
+em {
+  font-style: italic;
+}
