@@ -14,7 +14,6 @@ export default ({ weaknesses }) => {
 };
 
 const PhaseWeakness = ({ weaknesses }) => {
-  console.log('weaknesses', weaknesses);
   return (
     <div className="enemy-phase-weakness">
       {

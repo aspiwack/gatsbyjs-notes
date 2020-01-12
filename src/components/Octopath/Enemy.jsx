@@ -20,8 +20,8 @@ export default ({ enemyKey }) => {
       </div>
       <div className="enemy-container-right">
         <div className="enemy-shield-containers">
-          { enemy.shield.map(shield => (
-            <div className="enemy-shield-container">
+          { enemy.shield.map((shield, index) => (
+            <div key={index} className="enemy-shield-container">
               <img className="enemy-shield-icon" src={ShieldIcon} alt="Enemy Shields"/>
               <div className="enemy-shield-amount">
                 {shield}
