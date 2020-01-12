@@ -1,0 +1,76 @@
+.enemy-container {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .9);
+  border-radius: 10px;
+  margin: 2px;
+  border: 1px solid #72716f;
+  box-shadow:
+    0 0 0 1px #868583,
+    0 0 0 2px #696866;
+  color: white;
+  width: auto;
+
+  img.enemy-image {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+  }
+
+  div.enemy-container-right {
+    display: flex;
+    flex-direction: row;
+
+    img.enemy-shield-icon {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    img.enemy-attack-type-icon {
+      width: 2em;
+      height: 2em;
+      margin: .25em 0;
+    }
+
+    div.enemy-shield-containers {
+      display: flex;
+      flex-direction: column;
+
+      div.enemy-shield-container {
+        position: relative;
+        display: inline-block;
+        margin-right: .5em;
+
+        div.enemy-shield-amount {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -60%);
+          font-size: 1.25em;
+        }
+      }
+    }
+  }
+
+  .enemy-name {
+    text-align: left;
+  }
+}
+
+
+    // <div className="enemy-container">
+    //   <img className="enemy-image" src={enemyImage}/>
+    //   <div className="enemy-stats">
+    //     <div className="enemy-hp">
+    //       {enemy.HP}
+    //     </div>
+    //     <div className="enemy-weakness-container">
+    //       <div className="enemy-shield">
+    //         {enemy.shield[0]}
+    //       </div>
+    //       <div className="enemy-weakness">
+    //         <Weaknesses weaknesses={enemy.weaknesses}/>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>

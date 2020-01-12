@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: ak505188/gatsbyjs-notes
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: Notes
+    label: notes
+    folder: notes
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }

@@ -8,10 +8,15 @@ module.exports = {
     author: '@chrisbiscardi',
   },
   plugins: [
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
+        defaultLayouts: {
+          default: path.resolve('./src/components/layout.jsx')
+        },
+        remarkPlugins: [require("remark-grid-tables")]
       },
     },
     'gatsby-plugin-react-helmet',

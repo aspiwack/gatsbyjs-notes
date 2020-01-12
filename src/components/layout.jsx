@@ -1,10 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { MDXProvider } from '@mdx-js/react';
 import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
-import Header from './header'
+import { Grid, Turn } from './Grid/Grid';
 import '../styles/reset.css';
-import '../styles/layout.css'
+import '../styles/layout.scss';
+
+const shortcodes = { Grid, Turn };
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,9 +20,8 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+    render={() => (
+      <MDXProvider components={shortcodes}>
         <div
           style={{
             margin: '0 auto',
@@ -30,7 +32,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </>
+      </MDXProvider>
     )}
   />
 )
