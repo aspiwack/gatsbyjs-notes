@@ -43,10 +43,13 @@ export const CaitToggleButton = () => {
   );
 };
 
-export const Cait = ({ children, cait = true }) => {
+export const IfCait = ({ children, cait = true }) => {
   const { cait: caitFound } = useContext(CaitContext);
 
   return cait === caitFound ?
     <>{children}</> :
     null;
 };
+
+export const Cait = ({ children }) => <IfCait children={children} cait={true}/>;
+export const NoCait = ({ children }) => <IfCait children={children} cait={false}/>;
