@@ -16,7 +16,10 @@ module.exports = {
         defaultLayouts: {
           default: path.resolve('./src/components/layout.jsx')
         },
-        remarkPlugins: [require("remark-grid-tables")]
+        remarkPlugins: [
+          require("remark-grid-tables"),
+          require("remark-breaks")
+        ]
       },
     },
     'gatsby-plugin-react-helmet',
