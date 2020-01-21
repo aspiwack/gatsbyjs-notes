@@ -7,31 +7,17 @@ div.grid {
   box-sizing: border-box;
 
   .turn {
-    border: 1px solid black;
-    border-radius: 10px;
     margin: .5em;
     flex: 1 1 auto;
-    background-color: #f8f8f8;
+    padding-left: .5rem;
+    border-left: 3px solid lightgreen;
 
     &:nth-child(even) {
-      h5 {
-        background-color: blueviolet;
-      }
-    }
-
-    h5 {
-      background-color: white;
-      border-radius: 9px 9px 0 0;
-      padding: .5em;
-      text-align: center;
-      background-color: blue;
-      color: white;
+      border-color: cornflowerblue;
     }
 
     p {
       margin-bottom: 0;
-      padding: .5em;
-      padding-top: 0;
     }
   }
 }
