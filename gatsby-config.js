@@ -2,10 +2,10 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter MDX Basic',
+    title: 'Z3R01337\'s notes.',
     description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@chrisbiscardi',
+      'Z3R01337\'s random notes & stuff for various game speedruns.',
+    author: 'Z3R01337',
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
