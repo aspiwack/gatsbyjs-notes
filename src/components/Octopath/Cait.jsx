@@ -1,14 +1,16 @@
 import React, { useContext, useState } from 'react';
 import CaitImg from '../../images/Octopath/Sprites/Gifs/Cait.gif';
 
-const CaitContext = React.createContext({ cait: false, toggleCait: () => {} });
+const CaitContext = React.createContext({ cait: false, toggleCait: () => {}, enabled: false, enable: () => {} });
 
 export default ({ children }) => {
   const [cait, setCait] = useState(false);
+  const [enabled, setEnabled] = useState(false);
   const toggleCait = () => setCait(prevCait => !prevCait);
+  const enable = () => setEnabled(true);
 
   return (
-    <CaitContext.Provider value={{ cait, toggleCait }}>
+    <CaitContext.Provider value={{ cait, toggleCait, enabled, enable }}>
       <CaitToggleButton/>
       {children}
     </CaitContext.Provider>
@@ -16,7 +18,11 @@ export default ({ children }) => {
 };
 
 export const CaitToggleButton = () => {
-  const { cait, toggleCait } = useContext(CaitContext);
+  const { cait, toggleCait, enabled } = useContext(CaitContext);
+
+  if (!enabled) {
+    return null;
+  }
 
   return (
     <button
@@ -44,7 +50,10 @@ export const CaitToggleButton = () => {
 };
 
 export const IfCait = ({ children, cait = true }) => {
-  const { cait: caitFound } = useContext(CaitContext);
+  const { cait: caitFound, enabled, enable } = useContext(CaitContext);
+  if (!enabled) {
+    enable();
+  }
 
   return cait === caitFound ?
     <>{children}</> :
