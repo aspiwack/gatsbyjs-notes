@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-remark-slug": "^0.1.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
     "remark-breaks": "^1.0.3"

@@ -16,6 +16,9 @@ module.exports = {
         defaultLayouts: {
           default: path.resolve('./src/components/layout.jsx')
         },
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-slug'
+        ],
         remarkPlugins: [
           require("remark-grid-tables"),
           require("remark-breaks")
