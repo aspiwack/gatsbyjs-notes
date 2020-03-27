@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CaitImg from '../../images/Octopath/Sprites/Gifs/Cait.gif';
 
-const CaitContext = React.createContext({ cait: false, toggleCait: () => {}, enabled: false, enable: () => {} });
+const CaitContext = React.createContext({ cait: false, toggleCait: () => {}, enabled: true, enable: () => {} });
 
 export default ({ children }) => {
   const [cait, setCait] = useState(false);
@@ -51,9 +51,12 @@ export const CaitToggleButton = () => {
 
 export const IfCait = ({ children, cait = true }) => {
   const { cait: caitFound, enabled, enable } = useContext(CaitContext);
-  if (!enabled) {
-    enable();
-  }
+
+  useEffect(() => {
+    if (!enabled) {
+      enable();
+    }
+  }, [enable, enabled]);
 
   return cait === caitFound ?
     <>{children}</> :

@@ -1,9 +1,13 @@
-import Layout from '../components/Octopath/layout'
-import SEO from '../components/seo'
+import { Link } from 'gatsby'
+import Layout from '../../../components/Octopath/layout'
 
 export default ({ children }) => <Layout>{children}</Layout>;
 
 <SEO title="Octopath Traveler Primrose AMS Notes" />
+
+<h2 style={{ margin: '1rem 0' }}>
+  <Link to="/prim-ams-bishop">Updated Bishop Staff Route</Link>
+</h2>
 
 ## Primrose All Main Stories Route
 
@@ -102,7 +106,7 @@ Go east to the next screen, go down the stairs and buy all __M Soulstones__ from
 Recruit Primrose, then head through the dungeon (Escape or HHB x2 if needed)
 
 #### Helgenish
-L Stone + M Stone
+Any - Wind L + Light M OR HHD x2
 
 Tag __Clearbrook__, Tag __Quarrycrest__ (start Tressa 2).  
 
@@ -121,7 +125,8 @@ TP to __Rippletide__, Scrutinize & pick __Thunder L__, TP back to __Quarrycrest_
 Quit + Reload in Ravus Manor (or first turn escape to save ~9s)
 
 #### Heathecote
-T1 Any - Thunder L + Thunder/Ice/Fire M + Any M Stone
+T1 Any - Thunder L + Thunder M + Ice M 
+> If turn is favorable for Therion, can optionally steal another Pom M
 
 Steal __all items__ from Elderly Woman, __Steal Nourish Nut__ + __Pom S__ from girl before exiting.
 
@@ -315,12 +320,11 @@ Get __Giants Club__ from gold chest near entrance, get __Adamantite Hat__ and eq
 
 ##### Jobs
  * Ophilia: __Apothecary__, 3 Apoc Skills, __Back to Merchant__.
- * Tressa: __Apothecary__.
- * _If you want a safer Mattias and Redeye, you can teach Tressa 2 Warrior skills + Cover._
+ * Tressa: __Warrior__ + Incite + Thousand Spears, __Apothecary__.
 
 ##### Skills
  * Ophilia: Endless Items, Hale and Hearty
- * Tressa: Endless Items
+ * Tressa: Endless Items, Cover
 
 </Menu>
 
@@ -472,7 +476,7 @@ Ensure __Ophilia__ has at least __60 SP__ before starting the fight, and __Prim_
 
 > If you don’t have Lightning Blast SP, use a Soulstone L or M instead.
 
-### Primrose Ch.2 Continued
+### Prim Ch.2 Continued
 TP __Stillsnow__. Go to tavern, Unequip and replace __Ophilia__ with __Cyrus__ in the tavern interface before alluring.
 
 <Menu>
@@ -519,17 +523,16 @@ After stealing from second guy, TP to __Quarrycrest__.
 
 Kill an encounter in the manor with Ignisx2.  If you get an encounter outside the manor, you can choose to kill it or flee.
 
-Use __Magic L and Invigorating M__ whenever you have to heal SP in the menu.
+Use __Magic L and Invigorating M__ whenever you have to heal SP in the menu before Gideon
 
 #### Omar [92sp]
 ###### Turn 1
  * Primrose: Elemental Break x2
- * Cyrus: Defend
+ * Cyrus: Peacock x2 Prim
  * Tressa: Spear
  * Therion: Defend
 
 ###### Turn 2
- * Cyrus: Peacock x2 Prim
  * Primrose: Glaciesx4
  * Tressa: Defend/Donate BPx3 if after Prim
  * Therion: Donate Bpx3
@@ -558,9 +561,10 @@ Pick __Wind M__ from Odette’s house.
  * Tressa/Therion: Defend
 
 ###### Turn 3
- * Tressa: HHMx4 / HHBx4 if Magic L not used on Prim
+ * Tressa: HHMx4
  * Therion: Attack x4
  * Primrose: Ignis x4
+ * Cyrus: Soulstone M [If Magic L not used on Prim]
 
 ### Cyrus Ch.3
 TP __Stonegard__, steal __Fire L__ from guy south of third scruitnize in second screen + __Light & Shadow L__ from merchant guy in courtyard.
@@ -573,7 +577,7 @@ TP __Stonegard__, steal __Fire L__ from guy south of third scruitnize in second 
  * Primrose: __Scholar__, 1 skill, __Sorcerer__
  * Cyrus: __Apothecary__, + 3 skills
  * Tressa: __Dancer__, Peacock + Mole
- * _If you want to be safer for this fight, you can teach Cyrus two warrior skills for Cover_
+ * _If you want to be safer for this fight, you can teach him two warrior skills for Cover_
 
 ##### Skills
  * Primrose: Elemental Augmentation
@@ -589,17 +593,14 @@ TP __Stonegard__, steal __Fire L__ from guy south of third scruitnize in second 
  * Tressa: Peacock Strut
  * Therion: Pom L Primrose
 
-> _Merchant 1 throws the L, Merchant 2 does the other thing._
-> If you used the Magic L, any L Stone kills the adds. If not you need a Thunder L.
-
 ###### Turn 2
  * Cyrus: Staff x2 (Break Yvon)
  * Primrose: Tonitrus x4
- * Tressa: L Stone / Pom M Primrose
- * Therion: L Stone / Armor Corrosive
+ * Tressa: Thunder L
+ * Therion: Armor Corrosive/Thunder L
 
 ###### Turn 3
- * Primrose: Ignis x2/x4
+ * Primrose: Ignis x2
  * Cyrus: Soulstone M (Range)
  * Therion: HHV x4/Collect x4/Armor Corrosive
  * Tressa: HHV x4/Collect x4
@@ -618,16 +619,14 @@ TP __Clearbrook.__
  * 31x Plum
 
 ##### Sell
- * Sell every weapon and both Tempest Amulets, then go to __Equipment__ in the shop and unequip __Cyrus__.
-
-> If you picked up Wizard's Rod, you want to unequip Cyrus before selling.
+ * Sell every weapon, and then go to __Equipment__ in the shop and unequip __Cyrus__.
 
 </Menu>
 
 Replace __Cyrus__ with __Alfyn__, optimize + 2x 500 HP accessories
 
 #### Viper [32 sp]
-Primrose: Ignisx4 or Glaciesx2 + L Stone
+Primrose: Glaciesx4
 
 #### Alfyn Ch.2 Start
 Buy __Magic Nut L__ from Lysa in bottom right of second screen.
@@ -694,12 +693,10 @@ Pick __Pom L__ after 6th torch if low on pomegranates, pick __$15000__ (If you s
 TP __Wellspring__.
 
 ### Therion Ch.3
+You can choose to get an optional __Pom L__ before the forced fight (Risks an encounter)  
 Forced fight 2xIgnis
 
 #### Gareth [92 sp]
-
-> If turn order is really scary (or if you miss Elemental Break), Prim can Defend T1. T2 have Tressa & Alfyn throw L Stones.
-
 ###### Turn 1
  * Primrose: Elemental Break
  * Alfyn: Peacock
@@ -739,14 +736,14 @@ After the first cutscene, get the __Pom M__ chest.
 Do story stuff until inquiring guy below tavern. TP to __Noblecourt__.
 
 ### Primrose Ch.3
-In __Obsidian Manse__ S+Q if you took the encounter outside Seashore Grotto, else kill encounter with x4 Glacies/Ignis.
+TP __Noblecourt__. In __Obsidian Manse__ S+Q if you took the encounter outside Seashore Grotto, else kill encounter with x4 Glacies/Ignis.
 
 > Safe strat, consider using if Albus before Prim T2. Loses Collect.
 > T1: Prim 2xEBreak Therion 2xDonate BP
 > T2: Tressa 2xMercs
-> T3: First Merchant Max BP Donate BP other Merchant, 2nd Merchant 4xVets
+> T3: First Merchant Max BP Donate BP other Merchant
 
-#### Albus [60sp]
+#### Albus [66/100 sp]
 ###### Turn 1
  * Primrose: Peacock Strut Self
  * Alfyn: Concoct (Ruinous + Addlewort)
@@ -758,12 +755,28 @@ In __Obsidian Manse__ S+Q if you took the encounter outside Seashore Grotto, els
  * Tressa: Tradewinds
  * Therion: Armor Corrosive
 
-> If Prim got blinded and missed EBreak, skip Collect & throw L Stones with Merchant & Alfyn.
-
 ###### Turn 3
  * Primrose: Ignis x4
  * Merchant 1: Collect x4
  * Merchant 2: HHV x4
+ * Alfyn: Soulstone M (damage range, low chance)
+
+---
+
+If Albus blinded Primrose and she missed Elemental break, delay Alfyn’s break until the third turn, skip collecting, and have one of the merchants BP Donate.
+
+_If Elemental Break Missed or if someone died_
+###### Turn 3
+ * Primrose: Ignis x4
+ * Alfyn: Concoct (Injurous + Addlewort)
+ * Merchant 1: HHV x4
+ * Merchant 2: Defend / BP Donate Prim
+
+###### Turn 4
+ * Primrose: Ignis x4
+ * Any: Plum S if needed
+
+---
 
 # IMPORTANT
 Check your EXP after Albus - if Primrose is more than 800 xp __to a level__, do Miguel before Simeon [This assumes you do Miguel before Simeon].  If they are all within 800 xp, do Simeon first, after inquiring the man at the tavern in Alfyn 3. At this point you should have enough JP for the menu below:
@@ -801,29 +814,22 @@ If not, always do Miguel first, then Simeon.
  * Tressa: __Bowx3__
  * Primrose: Elemental Break
  * Alfyn: Peacock Prim
- * Therion: Defend
+ * Therion: Defend/Soulstone M if before Prim
 
 ###### Turn 3
  * Therion: Alephan
  * Primrose: Ignis x4
+ * Any: Soulstone M 
 
 ### Primrose Ch.4
-Steal __Fire L__, __Ice L__, __Wind L__, a few M Stones and optionally the other 2 L Stones.
-Can pick __Light L__. Can pick __Pom L__ but shouldn't be needed.
-
-> You want to save the Ice L for Ogre Eagle and 1 Ice L or Wind L for Olberic 3. A Wind L is also nice for Victorino.
+Steal a total of __4L 4M__ (steal all __Fire M__ from first NPC, and all __Ice M__ inside the theater) from various NPCs, 1 before theater, 1 before entering, 2 after 3rd cutscene.  
+Pick __Light L__, __Pom L__.
 
 For Simeon 1 and 2, if characters go before Primrose on turn 3 or 4 respectively, you can replace their actions with a Grape Bunch/Grape M.
 
-<Cait>
-
-> With Cait Tressa won't level up on this battle. So if you have an option on who to heal heal her.
-
-</Cait>
-
 #### Simeon 1 [56sp]
 ###### Turn 1
- * Primrose: Defend / Can heal if before Simeon T2
+ * Primrose: Defend/Grape Bunch
  * Alfyn: Dagger x2 Simeon
  * Tressa: HHM/Grape Bunch/Heal More/Grape
  * Therion: Shackle Foe/Grape Bunch/Grape M
@@ -837,21 +843,17 @@ For Simeon 1 and 2, if characters go before Primrose on turn 3 or 4 respectively
  * Therion/Tressa: Alephan+Aelfric
  * Primrose: Ignis x4 Simeon
 
-_Ideally all characters should level up after this. You can generally win if Tressa/Therion are dead at the start of this fight_
+_Ideally all characters should level up after this. You can let Tressa/Therion die for this fight_
 
 #### Simeon 2 [56sp]
-
-> Only thing to really lookout for is that Prim isn't silenced during T2 so she can Peacock herself.
-> Otherwise, just focus on getting him to 4 Shield for T2.
-
 ###### Turn 1
- * Primrose: Attack / Heal
- * Alfyn: Dagger / Heal
- * Tressa: Heal / HHM / Dancer / Defend
- * Therion: Dagger / Shackle Foe / Grape Bunch
+ * Primrose: Heal Silence/Grape Bunch/Pom M Alfyn
+ * Alfyn: Peacock Strut x2 Prim/Olive
+ * Tressa: HHM/Grape Bunch
+ * Therion: Shackle Foe/Grape Bunch
 
 ###### Turn 2
- * Primrose: Peacock Self / Attack
+ * Primrose: Heal Silence/Dagger/Grape Bunch/Pom M Alfyn/Peacock Strut self (if Alfyn was silenced before his turn)
  * Alfyn: Defend
  * Tressa: HHD/Grape Bunch/Grape M
  * Therion: Dagger/Grape Bunch
@@ -863,8 +865,9 @@ _Ideally all characters should level up after this. You can generally win if Tre
 
 ###### Turn 4
  * Primrose: Ignisx4
+ * Any: Soulstone M (possible damage range, somewhat low chance if you see a lot of ~15900 hits).
 
-You get autohealed after Prim 4 and during Alfyn 4. TP to __Orewell__.
+Heal, TP to __Orewell__.
 
 ### Alfyn Ch.4
 #### Ogre Eagle [60/92sp]
@@ -891,7 +894,7 @@ You get autohealed after Prim 4 and during Alfyn 4. TP to __Orewell__.
  * Primrose: Elemental Breakx2
  * Alfyn: Peacock / Status Heal / Icicle if needed
  * Tressa: Pom M Prim / Status Heal if needed
- * Therion: Blizzard
+ * Therion: Icewind
 
 ###### Turn 2
  * Primrose: Glacies
@@ -927,12 +930,12 @@ TP __S’warkii__. Swap __Alfyn__ for __H’aanit__.
 </Menu>
 
 #### Ghisarma [72sp]
-Primrose: Glaciesx3 OR Glaciesx2 + L Stone
+Primrose: Glaciesx3 
 
 ### H'aanit Ch.2
 TP __Stonegard__.  
 Provoke 1: 2x Fire L + 1 M  
-Provoke 2: Light/Fire L + Any L OR 3x Fox + 1 L
+Provoke 2: Light L + Any L OR 3x Fox + 1 L
 
 <Menu>
 
@@ -942,9 +945,6 @@ Provoke 2: Light/Fire L + Any L OR 3x Fox + 1 L
 </Menu>
 
 #### Lord of the Forest [92sp]
-
-> If you accidently Donate BP Prim, replace Peacock or EBreak with Pom S Therion. 1 buff + Alephan + 4xIgnis kills
-
 ###### Turn 1
  * Primrose: Elemental Break
  * H'aanit: Peacock __Primrose__
@@ -975,8 +975,6 @@ TP __Stillsnow__. Provoke: 1x Fox + 2 Shadow L + 1L
 
 ### H'aanit Ch.4
 TP __Marsalim__. Steal __Pom L x2__ from the blue man on your way upstairs.
-
-Pick **$50000** and **$30000** chests in Grimsand Ruins.
 
 > This is fight is always cleanly winnable as long as you have someone between Redeye turns T1.
 > You have 3 goals for T1, from then on the fight is free.
@@ -1014,133 +1012,95 @@ Pick **$50000** and **$30000** chests in Grimsand Ruins.
 
 > Saving is optional as recovering from this battle if he kills someone or Prim misses Elemental Break is difficult.
 
-#### Bishop's Staff
-Unequip H'aanit. TP __Flamesgrace__.
-
-<Menu>
-Unequip H'aanit.
-</Menu>
-
-Go to Tavern, swap H'aanit for Cyrus. Go to church, purchase __Bishop's Staff__ from Lianna.
-
-TP __Duskbarrow__.
-
-### Cyrus Ch.4
-<Menu>
-
-##### Equipment
- * Primrose: Optimize, replace Stimulating Bracelet with __Empowering Bracelet__.
- * Therion: Optimize, remove __Empowering Bracelet__.
- * Cyrus: Optimize, 2 Empowering Bracelets.
-
-##### Jobs
- * Primrose: Tenebrae
- * Cyrus: __Hunter__, Leghold Trap
-
-##### Skills
- * Primrose: Augmented Elements over Stronger Strikes
-
-**Heal Up**
-
-</Menu>
-
-> Options 2, 2, 2
-
-You really want to have at least 1 Healing Grape Bunch, possibly 2 but shouldn't be necessary. If you don't have one the right chest at the entrance is a Healing Grape Bunch.
-
-If you don't have a Ice L or Wind L, you can pick the __Ice L__ on the second screen. It's the first chest after the library.
-
-#### Lucia [96sp]
-###### Turn 1
- * _If both Therion & Tressa before Lucia, use HHM / Shackle. If one before, use that persons buff & HGB with the other. If both after, Shackle Foe + HGB._
- * Primrose: 2xPeacock Self
- * Cyrus: Leghold Trap
- * Tressa: HHM / Heal
- * Therion: Shackle Foe / Heal
-
-###### Turn 2
- * _Anyone that's before Prim T3 can heal here._
- * Primrose: Elemental Break
- * Cyrus: Pom M Prim / Heal
- * Tressa: Defend / Heal
- * Therion: Defend / Heal
-
-###### Turn 3
- * Primrose: **Lux Congerere** x4
- * Cyrus: Pom M Prim if not done already.
- * Tressa: Aelfrics
- * Therion: Alephans
-
-
-> Options 2, 3, 2
-
 #### Olberic Ch.1 [72sp]
+Unequip __H’aanit__.  
+TP __Cobbleston__, swap __H'aanit__ with __Olberic__.
+
 <Menu>
 
-##### Unequip
- * Primrose: Swap __Empowering Bracelet__ for __Stimulating Bracelet__.
- * Cyrus: Unequip
- * Therion: Equip __Empowering Bracelet__.
+Check money during this menu.
 
 ##### Skills
- * Primrose: Swap Elemental Augmentaion for Stronger Strikes
-
-</Menu>
-
-TP __Cobbleston__, swap __Cyrus__ with __Olberic__.
-
-<Menu>
+Primrose: Tenebrae, Augmented Elements over Elemental Augmentation
 
 ##### Equipment
 Olberic: Optimize + 500 HPx2
 
 </Menu>
 
-_Night Ode_, Therion 2xFireball, or M Stone first encounter
+_Night Ode_ or M Stone first encounter, Glacies x2 Gaston
 
-Gaston: Ignis x2
-
-TP __Northreach__.
-
-### Therion Ch.4 Start
-Kill encounter with 2x Tonitrus.
-
-Inspirating Plum Primrose once unless you leveled. Otherwise not enough SP for Victorino. TP __Victor's Hollow__. 
+TP __Victor's Hollow__.
 
 ### Olberic Ch.2
 <Menu>
 
+Check money if you haven't already.
+
 ##### Jobs
- * Olberic: __Merchant__, Donate BP, HH
+ * Olberic: __Merchant__, HH
  * Tressa: __Dancer__
 
 </Menu>
 
 TP __Victors Hollow__.
 
-> Need ~162k for Challeneges. If you're short can Spear/Sword, Attack x3, L Stone.
+__Challenge 1__: Spear, 3x Spear, Soulstone L OR HHV x2 if you have ~170k
 
-__Challenges__: HHV
+> Steal a **Thunder L** near Challenge 2 if needed. You need 1L for Olberic Ch.3
 
-__Victorino__: Ventus x3 OR 2xVentus and Wind L
+__Challenge 2__: HHV
 
-> You’re healed between each battle so no menuing to heal SP is necessary.
+__Victorino__: Ventus x3
 
-__Joshua__: 4xLux
+> You’re healed between each battle so no menuing to heal SP is necessary. You can optionally teach Olberic Donate BP (If you choose not to you will need to replace Donate BP with Pom S/M as needed
 
-__Archibold__: Peacock + Tenebrae x3
+__Joshua__: Peacock or Elemental Break + Lux x4 (Pom S)
+
+__Archibold__: Peacock or Elemental Break + Tenebrae x4 (Pom S)
 
 #### Gustav [72]
+#### If Prim 1st T2
 ###### Turn 1
  * Primrose: Glacies x2
- * Olberic: Defend + Donate BPx3 Prim / Pom L Prim
- * Tressa: Donate BP Therion
+ * Olberic: Pom L Prim / Donate BP Therion / Pom S Therion
+ * Tressa: Donate BP Therion / Defend
  * Therion: Defend
 
 ###### Turn 2
  * Therion: Alephan
+ * Tressa: L Stone / Donate BPx3 Prim if Defended T1
  * Primrose: 4xIgnis
- * Tressa: Maybe M Stone (might be range)
+ * Olberic: L Stone if not thrown already
+
+---
+
+#### If someone before Prim T2
+##### Turn 1
+ * Primrose: Glacies x2
+ * Olberic: Pom S Therion
+ * Tressa: Peacock
+ * Therion: Defend / Pom M Prim if before Prim T2
+
+##### Turn 2
+ * Therion: Alephan
+ * Olberic/Tressa: Donate BPx2 / Pom M Prim
+ * Primrose: Ignisx4
+
+---
+
+#### Classic 3T Resourceless strat
+###### Turn 1
+ * Primrose: Glacies x2
+ * Tressa: Peacock Prim
+
+###### Turn 2
+ * Therion: Defend 
+ * Tressa Donate BPx2 Prim
+
+###### Turn 3
+ * Therion: Alephan
+ * Primrose: Ignisx4
  
 ### Olberic Ch.3
 TP __Wellspring__.
@@ -1150,98 +1110,164 @@ Heal to 144 SP before the lizard battles, Glacies x2
 #### Lizardman Chief [92sp]
 ###### Turn 1
  * Primrose: Elemental Break
- * Olberic: Donate BP Primrose
+ * Olberic: Pom S Therion
  * Tressa: Peacock
  * Therion: Defend
 
 ###### Turn 2
- * Therion: Ice / Wind L
- * Primrose: Lux Congerere x4
+ * Therion: Alephan
+ * Primrose: Tonitrus x3
+ * Any: Wind/Ice Soulstone L
 
 __Erhardt__ HHV, HHVx3
 
 ### Olberic Ch.4
-TP __Riverford__.
+TP __Riverford__. If you don’t have a Pom M left, steal from the right guard at the entrance.  
 
-__Red Hat guy__: Pom L, HHVx4, HHVx3
+__Red Hat guy__: Sword, Pom M, HHVx4, HHVx3
+
+> You can optionally steal a Pom L from the blue merchant on your way to Werner
+> You need to have just 1M at this point assuming nothing goes wrong for Lucia.
+
+<Menu>
+
+##### Skills
+ * Primrose: Elemental Augmentation over Stronger Strikes
+
+</Menu>
 
 After entering manse from hidden path, TP __Riverford__ and go to manse.
 
-> If anyone but Therion gets Terrored you're good, 3xLux kills. Just have Tressa heal Terror T2 if it's Prim.
-> If Therion gets Terrored skip EBreak & Heal Terror + Donate BP Therion
-> 4xLux without EBreak + 2 L Stones or 1 Vet will kill.
-
 #### Werner [164sp]
 ###### Turn 1
- * Primrose: Lux Congerere
- * Olberic: Defend x2
- * Tressa: Peacock Prim
+ * Primrose: Tonitrus
+ * Olberic: Defend
+ * Tressa: 2xPeacock Prim
  * Therion: Attack
 
 ###### Turn 2
  * Olberic: Tradewinds
  * Primrose: Elemental Break
- * Tressa: Nothing / Heal Terror / Donate BP
+ * Tressa: Donate BP Prim/Therion if one of them got terrored
  * Therion: Defend
 
 ###### Turn 3
  * Therion: Alephan
- * Primrose: **Lux Congerere** x4
+ * Primrose: Ignis x4
 
 TP __Northreach.__
 
 ### Therion Ch.4
+Go to tavern, __unequip Olberic__, swap for __Cyrus__, do story stuff + start __Ogen sidequest__ on the way.  
+
+Kill encounter with 2x Tonitrus.
+
+Start Ogen quest. After cutscene in church, TP __Victors Hollow__. 
+Steal **Mind-me-always** from flower girl in bottom-right corner. TP back to __Northreach__.
+
+#### !!!IMPORTANT!!!
+_Purchase **Empowering Necklace** from NPC at entrance of town._
+
+Steal __Pom L__, then 8% steal.
+
+Get __Double Tomahawk__ from Ogen.
+
 <Menu>
 
 ##### Equipment
- * Olberic: -2 Empowering Bracelet
- * Primrose: +2 Empowering Bracelet
+ * Primrose: Optimize + __Empowering Necklace__ over Stimulating Bracelet
+ * Cyrus: Tomahawk + 2 Empowering Bracelet. Should have no other equipment.
+ * Therion: Optimize
 
-##### Skills
- * Primrose: The Show Goes On over Stronger Strikes
+##### Jobs
+ * Cyrus: __Hunter__, Leghold Trap
+ * Tressa: __Warrior__
 
-_Heal up_.
-
+_Heal up._
 </Menu>
-
-8% steal skill time.
-
-> Darius shouldn't be able to kill Therion or Prim. It's fine if he kills Tressa or Olberic
 
 ### Darius [92sp]
 ###### Turn 1
- * Primrose: Peacock
- * Olberic: Defend
- * Tressa: Defend
- * Therion: Attack
+ * Primrose: 2xPeacock
+ * Cyrus: Defend / __Axe__ if before Steal Items and Cyrus HP > 2400
+ * Tressa: Donate BPx2 Primrose / Defend
+ * Therion: Defend
 
 ###### Turn 2
- * Olberic or Tressa: **Spear** x3
+ * Cyrus: Axex2 / Pom M Primrose if Tressa broke.
  * Primrose: Elemental Break
+ * Tressa: Nothing / 2xSpear
  * Therion: Defend
 
 ###### Turn 3
  * Therion: Alephan
- * Primrose: **Lux Congerere** x4
+ * Primrose: Ignisx4
+
+> If Darius kills someone, break him on second turn always, then heal up to ~2k HP, use Tressa/Therion to do a second break
+
+### Cyrus Ch.4
+TP __Duskbarrow.__
+
+> Options 2, 2, 2
+
+**Heal Up**
+
+Lucia requires 1L + 1M Pom, if you don’t have enough Poms, loot chest in second room before second cutscene inside the dungeon.  If you don’t have remaining grape bunches, use Heal More instead. Red Apple replaces 1L Pom if needed.
+
+#### Lucia [96sp]
+###### Turn 1
+ * Primrose: Pom L Cyrus
+ * Cyrus: 2x Leghold Trap
+ * Tressa: 2x HHM [28]
+ * Therion: 2x Shackle Foe 
+
+###### Turn 2
+ * Primrose: Defend
+ * Cyrus: Axex4 [20]
+ * Tressa: Incite
+ * Therion: Grape Bunch
+
+###### Turn 3
+ * Primrose: Pom L Cyrus
+ * Cyrus: Axex4 [12]
+ * Tressa: 2xSpear [10]
+ * Therion: Grape Bunch
+
+###### Turn 4
+ * Primrose: **2x** Peacock Strut __Self__.
+ * Cyrus: Axe [8]
+ * Therion: Grape M / Jam Tressa
+
+###### Turn 5
+ * Primrose: Elemental Break
+ * Cyrus: Axex4 [Break]
+ * Therion: Alephan
+
+###### Turn 6
+ * Primrose: Ignisx4
+
+> Options 2, 3, 2
 
 ### Tressa Ch.4
 TP __Grandport__.
 
-> Esmeralda shouldn't be able to kill Therion or Prim. It saves time if she kills Olberic or Tressa.
+Steal a spare __Wind/Light soulstone__ if you don’t have any, in case Esmeralda uses Red Blade on Cyrus.
 
 #### Esmeralda [96sp]
 ###### Turn 1
- * Primrose: Peacock
- * Olberic/Tressa: Defend
- * Therion: **Staff**
+ * Primrose: 2xPeacock
+ * Cyrus: Defend
+ * Tressa: Defend
+ * Therion: Pom L Prim
 
 ###### Turn 2
- * Olberic/Tressa: 3xSpear
  * Primrose: Elemental Break
+ * Cyrus: 2xAxe / Any Wind or Light Stone
+ * Tressa: Nothing / 3xSpear or Thousand Spears
  * Therion: Defend
 
 ###### Turn 3
  * Therion: Alephan
- * Primrose: **Lux Congerere** x4
+ * Primrose: Ignisx4
 
-## FIN
+If Esmeralda kills someone, break her and have Tressa Incite. Setup Alephans, At least 2 BP on Therion, and Peacock/EBreak for T5. T4 Break with Rain of Arrows + 3x Sword. Other weaknesses are Fire, Lightning, Wind.

@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
+    'gatsby-plugin-root-import',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
