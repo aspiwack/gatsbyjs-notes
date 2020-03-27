@@ -86,10 +86,30 @@ em {
 }
 
 table {
+  table-layout: fixed;
   margin-bottom: 1.5em;
+  width: 100%;
+  text-align: center;
 
   th {
-    font-weight: 700;
+    background-color: #4CAF50;
+    color: white;
+    padding: .5 rem;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  tr {
+    & > * {
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+    }
+  }
+
+  th, td {
+    padding: .5rem;
   }
 
   p {
