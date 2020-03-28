@@ -1,0 +1,35 @@
+button.nav-accordian {
+  padding-left: .5em;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    height: 0;
+    width: 0;
+  }
+
+  $TriangleSize: .35rem;
+
+  &.closed::before {
+    margin-right: $TriangleSize;
+    border-left: $TriangleSize solid black;
+    border-top: $TriangleSize solid transparent;
+    border-bottom: $TriangleSize solid transparent;
+    transform: translateX(-37.5%);
+  }
+
+  &.open::before {
+    border-top: $TriangleSize solid black;
+    border-left: $TriangleSize solid transparent;
+    border-right: $TriangleSize solid transparent;
+    transform: translate(-50%, -50%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StaticQuery, Link, graphql } from 'gatsby';
+import './navigation.scss';
 
 function pathToArray(path) {
   return { path, pathArray: path.slice(1, path.length - 1).replace(/-/g, ' ').split('/') };
@@ -41,29 +42,51 @@ const Navigation = ({ nodes }) => {
   return NavList(routeMap);
 }
 
+const NavAccordian = ({ name, children }) => {
+  const [open, setOpen] = useState(true);
+
+  return (
+    <>
+      <button
+        className={`nav-accordian ${open ? 'open' : 'closed'}`}
+        onClick={() => setOpen(prevOpen => !prevOpen)}
+      >
+        {name}
+      </button>
+      { open ?
+        children :
+        null
+      }
+    </>
+  );
+}
+
 const NavList = map => (
-  <ul>
+  <ul style={{ paddingLeft: '.2rem' }}>
     { Object.entries(map).map(([dir, list]) => (
       <li key={dir}>
-        { Array.isArray(list) ?
-          <ul>
-            <div>{dir}</div>
-            { list.map(listItem => (
-              <li key={listItem.name}>
-                <Link to={listItem.path}>
-                  {listItem.name}
-                </Link>
-              </li>
-            ))}
-          </ul> :
-          <ul>
-            <div>{dir}</div>
-            {NavList(list)}
+        <NavAccordian name={dir}>
+          <ul style={{ paddingLeft: '1rem' }}>
+            {
+              Array.isArray(list) ?
+              list.map(listItem => (
+                NavListLink(listItem)
+              )) :
+              NavList(list)
+            }
           </ul>
-        }
+        </NavAccordian>
       </li>
     ))}
   </ul>
+);
+
+const NavListLink = listItem => (
+  <li key={listItem.name}>
+    <Link to={listItem.path}>
+      {listItem.name}
+    </Link>
+  </li>
 );
 
 const query = graphql`
