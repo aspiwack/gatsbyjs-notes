@@ -1,7 +1,7 @@
 import React from 'react';
 import './Menu.scss';
 
-export const Menu = ({children}) => <div className="octopath-menu">{children}</div>;
+export const Menu = ({children}) => <div className="menu">{children}</div>;
 export const Items = ({children}) => <MenuItem type="items">{children}</MenuItem>;
 export const Jobs = ({children}) => <MenuItem type="jobs">{children}</MenuItem>;
 export const Equipment = ({children}) => <MenuItem type="equipment">{children}</MenuItem>;

@@ -3,7 +3,7 @@ import SEO from '../seo';
 import { MDXProvider } from '@mdx-js/react';
 import { Grid, Turn } from '../Grid/Grid';
 import CaitProvider, { Cait, NoCait } from './Cait';
-import { Menu, Equipment, Jobs, Items, Formation, Skills } from './Menu';
+import { Menu, Equipment, Jobs, Items, Formation, Skills } from '../Menu/Menu';
 
 import Gamepad from '../Gamepad';
 import '../../styles/reset.css';
