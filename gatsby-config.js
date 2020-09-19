@@ -11,6 +11,7 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
     'gatsby-plugin-root-import',
+    'gatsby-remark-images',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -18,7 +19,13 @@ module.exports = {
           default: path.resolve('./src/components/layout.jsx')
         },
         gatsbyRemarkPlugins: [
-          'gatsby-remark-slug'
+          'gatsby-remark-slug',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960
+            }
+          }
         ],
         remarkPlugins: [
           require("remark-grid-tables"),
