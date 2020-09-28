@@ -23,7 +23,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 960
+              maxWidth: 960,
+              wrapperStyle: 'max-width: 960px; width: 100%;'
             }
           }
         ],
